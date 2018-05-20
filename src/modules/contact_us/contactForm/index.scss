@@ -1,0 +1,28 @@
+@import "../../../data/assets/style/style_import.scss";
+
+.contactFormContainer {
+    color: $tertiary;
+    font-family: $font-family-secondary;
+
+    .ant-input {
+        border: solid 3px rgba(126, 79, 79, 0.2);
+        height: auto;
+        padding: 5px;
+    }
+
+    .button {
+        background-color: $secondary;
+        color: $white;
+        width: 100%;
+
+        &:hover, &:focus {
+            color: $secondary !important;
+            background: $white !important;
+            border-color: $secondary;
+        }
+    }
+
+    .ant-input-group-addon {
+        padding-top: 0;
+    }
+}

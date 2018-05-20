@@ -1,0 +1,39 @@
+@import "../../data/assets/style/style_import.scss";
+
+.shippingContainer {
+    .form {
+        input {
+            height: 42px;
+            border: solid 1px rgba(128, 79, 80, 0.5);
+            border-radius: 0px;
+            font-family: $font-family-secondary;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .paymentButton {
+            font-size: 12px;
+            background: #804f50;
+            color: white;
+            border-radius: 0px;
+            margin-top: 20px;
+
+            &:hover {
+                color: white !important;
+            }
+
+            .ant-btn:focus {
+                color: white !important;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}

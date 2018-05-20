@@ -1,0 +1,36 @@
+@import "../../../data/assets/style/style_import.scss";
+
+.contactFormContainer {
+    color: $tertiary;
+    font-family: $font-family-secondary;
+
+    .ant-input {
+        // border:1px solid red !important;
+        border: solid 3px rgba(126, 79, 79, 0.2);
+        height: 42px;
+    }
+
+    .input {
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .textarea {
+        width: 100%;
+        border: solid 3px rgba(126, 79, 79, 0.2);
+        height: 164px;
+        margin-top: 5px;
+    }
+
+    .button {
+        background-color: $secondary;
+        color: $white;
+        width: 100%;
+    }
+
+    .ant-btn:hover,
+    .ant-btn:focus {
+        color: $secondary !important;
+        border-color: $secondary;
+    }
+}

@@ -1,0 +1,32 @@
+@import "../../../../data/assets/style/style_import.scss";
+.imageGridContainer {
+    .imageContainer {
+        height: 300px;
+        background-size: cover;
+        position: relative;
+        background-color: #724aa0;
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            width: 100%;
+
+            .text {
+                color: white;
+                font-size: 22px;
+                padding: 16px 32px;
+                font-family: $font-family-secondary;
+                font-weight: 900;
+            }
+        }
+
+        &:hover {
+            opacity: 0.2;
+            background: #724aa0;
+
+            .middle {
+                opacity: 1;
+            }
+        }
+    }
+}

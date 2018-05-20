@@ -1,0 +1,131 @@
+@import "../../../../data/assets/style/style_import.scss";
+
+.totalProducts {
+    font-family: $font-family-secondary;
+
+    .border {
+        border: solid 1px #e5e5e5 !important;
+    }
+
+    .brownBorder {
+        border-bottom: solid 1px #804f50;
+        width: 20%;
+    }
+
+    .header {
+        color: #444444;
+        background-color: #f9f9f9;
+        color: #c1c1c1;
+    }
+
+    .body {
+        color: #444444;
+        border: solid 1px #e5e5e5;
+        border-top: 0px !important;
+    }
+
+    .productImage {
+        padding: 20px;
+        max-width: 100px;
+    }
+
+    .circle {
+        width: 20px;
+        border-radius: 50%;
+        height: 20px;
+        background-color: rgba(58, 85, 159, 0.4);
+        cursor: pointer;
+    }
+
+    .total {
+        color: #1d1d1d;
+    }
+
+    .paymentButton {
+        font-size: 12px;
+        background: #804f50;
+        color: white;
+        border-radius: 0px;
+        margin-top: 20px;
+        padding-top: 11px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+
+        &:hover {
+            color: white !important;
+        }
+
+        .ant-btn:focus {
+            color: white !important;
+        }
+    }
+
+    .input {
+        height: 34px !important;
+        border: solid 1px rgba(68, 68, 68, 0.2) !important;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .header {
+            font-size: 10px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .body {
+            font-size: 12px !important;
+            padding: 5px !important;
+            padding: 20px 5px !important;
+        }
+
+        .productImage {
+            margin: 5px;
+            padding: 20px !important;
+            padding-left: 5px !important;
+            padding-right: 5px !important;
+            margin-left: 5px;
+            display: none;
+
+            img {
+                width: 68px;
+            }
+        }
+
+        .couponCode {
+            margin-left: 0px !important;
+            flex-direction: column !important;
+        }
+
+        .totalSection {
+            padding-right: 10px !important;
+        }
+
+        .total {
+            margin-left: 70px !important;
+            font-size: 12px !important;
+        }
+
+        .input {
+            margin-bottom: 10px;
+        }
+
+        .circle {
+            height: 8px;
+            width: 10px !important;
+            padding: 9px;
+        }
+
+        .cartElement {
+            font-size: 10px !important;
+        }
+
+        .quantityElement {
+            margin: 0px 7px !important;
+        }
+
+        .productDetail {
+            margin-left: 20px;
+        }
+    }
+}

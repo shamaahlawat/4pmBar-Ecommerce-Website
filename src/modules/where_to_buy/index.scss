@@ -1,0 +1,43 @@
+@import "../../data/assets/style/style_import.scss";
+
+.whereToBuyContainer {
+    .button {
+        bottom: 50px;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .indent {
+        padding: 30px 0 !important;
+    }
+
+    .purchaseDetails {
+        &:hover {
+            transform: scale(1.2) !important;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .button {
+            bottom: 7px;
+            font-size: 12px;
+            padding: 6px !important;
+        }
+
+        .onlineSites {
+            justify-content: center !important;
+        }
+
+        .purchaseDetails {
+            padding: 25px 0;
+        }
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 996px) {
+        .button {
+            bottom: 22px;
+        }
+    }
+}

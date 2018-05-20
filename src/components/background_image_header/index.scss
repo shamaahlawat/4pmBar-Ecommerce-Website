@@ -1,0 +1,38 @@
+@import "../../data/assets/style/style_import.scss";
+
+.backgroundContainer {
+    background-image: url("https://res.cloudinary.com/poletalks/image/upload/v1523516329/4%20pm%20bar/Cart-min.png");
+    height: 300px;
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    // background-size: 100% 100% !important;
+
+    .name {
+        font-size: 50px;
+    }
+
+    .border {
+        border-bottom: 2px solid $white;
+        width: 150px;
+        margin-top: 100px;
+    }
+
+    &.about_us {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .backgroundContainer {
+        background-repeat: no-repeat;
+        background-position: inherit;
+        margin-bottom: 20px;
+
+        .name {
+            font-size: 35px;
+        }
+    }
+}

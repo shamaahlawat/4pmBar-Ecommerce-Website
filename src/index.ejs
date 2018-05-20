@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>4 PM BAR</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="4pm Bar, Nutrition bar, energy bar, office snack, healthy snack, spirulina, super food, food startups in india, nutrition, energy, bar, snack, healthy, 4pm, hungry, order healthy, eat healthy, mineral suppliment, nutritional supplement" />
+    <meta name="description" content="4pm bar can outreach everyone such as professionals having deadlines and henceforth do not have time for food, health freaks having missed out their intake of nutrients, post-sports indulgence, rescuer to tricky situations like during travelling,
+    during treks/hikes, long meeting hours, vehicle failure on highways and much more." />
+    <meta name="description" content="Hungry @ Work? solution is here.. 4pm Bar - Hunger ka Healthy Solution"/>
+
+    <link rel="shortcut icon" href="favicon.ico" />     
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Paytone+One" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script>
+        function openPaymentPage(data, callback) {
+            var options = {
+                "key": "rzp_test_SHentFJ2jBqiOi", //test
+                // "key": "rzp_live_Nud13N537pCqmZ", //live
+                "amount": data.total * 100, // 2000 paise = INR 20
+                "name": "4PM BAR",
+                "description": data.total_count + " items payment",
+                "image": "https://res.cloudinary.com/poletalks/image/upload/v1521192534/4%20pm%20bar/4-pm-bar-logo.png",
+                "handler": function (response) {
+                    callback(response);
+                },
+                "prefill": {
+                    "email": data.email,
+                    "contact": data.phone
+                },
+                "notes": {
+                },
+                "theme": {
+                    "color": "#F37254"
+                }
+            };
+
+            var rzp1 = new Razorpay(options);
+            rzp1.open();
+        }
+    </script>
+    
+    <!-- Load Facebook SDK for JavaScript --> 
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="744073882384880"></div>
+</body>
+
+</html>

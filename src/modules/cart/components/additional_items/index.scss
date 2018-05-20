@@ -1,0 +1,56 @@
+@import "../../../../data/assets/style/style_import.scss";
+
+.additionalProducts {
+    border-radius: 10px;
+    background-color: #00abbe;
+
+    .paymentButton {
+        font-size: 12px;
+        background: #804f50;
+        color: white;
+        border-radius: 0px;
+        padding-top: 8px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        margin-left: 10px;
+
+        &:hover {
+            color: white !important;
+        }
+
+        .ant-btn:focus {
+            color: white !important;
+        }
+    }
+
+    .chocolateName {
+        font-weight: 300;
+        font-size: 16px;
+        font-family: $font-family-secondary;
+    }
+
+    .imageContainer {
+        // width: 308px;
+        max-width: 300px;
+        background: none;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .ant-select {
+        width: 100%;
+    }
+
+    .border {
+        border-bottom: 1px solid white;
+        padding-bottom: 30px;
+    }
+
+    .ant-form-item {
+        width: 200px;
+        margin-bottom: 0px !important;
+    }
+}

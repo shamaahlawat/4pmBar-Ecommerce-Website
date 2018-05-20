@@ -1,0 +1,31 @@
+@import "../../data/assets/style/style_import.scss";
+
+.contactUsContainer {
+    background: $white;
+
+    .nakaAddress {
+        font-family: $font-family-secondary;
+        font-size: 21px;
+        color: $tertiary;
+        padding: 0 50px;
+    }
+
+    .companyName {
+        font-weight: $font-bold;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .nakaAddress {
+            margin-bottom: 50px;
+            padding: 0 20px;
+
+            iframe {
+                width: 100%;
+            }
+
+            .address {
+                font-size: 16px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+@import "../../../../data/assets/style/style_import.scss";
+
+.benefitsContainer {
+    background: $white;
+    
+    .mainContainer {
+        min-height: 300px;
+
+        .imageSection {            
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .content {
+            height: auto;
+            
+            .elements {
+                font-size: 24px;
+                color: $green;
+                padding-bottom: 10px;
+            }
+
+            .greenBorder {
+                border-bottom: 2px solid #7e4f4f;
+                color: #7e4f4f;
+            }
+
+            .purpleBorder {
+                border-bottom: 2px solid #7e4f4f;
+                color: #7e4f4f;
+            }
+
+            .description {
+                font-weight: normal;
+                font-size: 18px;
+                color: $tertiary;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 767px) {
+        .mainContainer {
+            .imageSection {
+                img {
+                    height: 100%;
+                }
+            }
+            
+            &.leftAlign {
+                .imageSection {
+                    order: 1;
+                }
+
+                .content {
+                    order: 2;
+                }
+            }
+
+            &.rightAlign {
+                .imageSection {
+                    order: 2;
+                }
+                
+                .content {
+                    order: 1;
+                }
+            }
+        }
+    }
+}

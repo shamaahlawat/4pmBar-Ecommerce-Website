@@ -1,0 +1,42 @@
+@import "../../data/assets/style/style_import";
+
+.appHeaderContainer {
+    padding: 0px;
+    background-color: $primary;
+
+    .logo {
+        max-height: 70px;
+    }
+
+    .linkContainer {
+        .link {
+            border-bottom: 3px solid $primary;
+            padding: 10px 20px;
+            margin: 0 5px;
+            font-weight: $font-bold;
+            text-transform: uppercase;
+            color: #e1d9eb;
+            letter-spacing: 0.6px;
+
+            &.active, &:hover {
+                border-bottom-color: #fff;
+                color: #fff;
+            }
+        }
+
+        .socialLinks {
+            .link {
+                padding: 10px;
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) { 
+    .appHeaderContainer {
+        .logo {
+            max-height: 60px;
+        }
+    }
+}

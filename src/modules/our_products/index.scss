@@ -1,0 +1,90 @@
+@import "../../data/assets/style/style_import.scss";
+
+.ourProductContainer {
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $secondary;
+        font-family: $font-family-secondary;
+        margin-top: 20px;
+        padding: 10px;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        cursor: pointer;
+        font-size: 16px;
+        color: $secondary;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .bg-color {
+        margin: 50px;
+        padding: 50px 0;
+    }
+
+    .chocolateDetails {
+        background-color: white;
+        color: $secondary;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $primary;
+            transition-duration: 0.4s;
+        }
+    }
+
+    .chocolateDetails:hover .chocolate {
+        color: white;
+    }
+
+    .chocolateDetails:hover .button {
+        color: $white;
+        border: 1px solid $white;
+    }
+
+    .bg-white {
+        background-color: white !important;
+    }
+
+    .whiteBar {
+        color: $secondary;
+    }
+
+    .coloredBorder {
+        border: 1px solid $secondary;
+        font-family: $font-family-secondary;
+        color: $secondary;
+    }
+
+    .img-container {    
+        .productImage {
+            max-width: 100%;
+            max-height: 300px;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .bg-color {
+            margin: 0px;
+        }
+
+        .chocolate {
+            font-size: 16px;
+        }
+
+        .button {
+            font-size: 12px !important;
+        }
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 996px) {
+        .addToCart {
+            padding-left: 0px;
+        }
+    }
+}

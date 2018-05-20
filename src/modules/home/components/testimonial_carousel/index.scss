@@ -1,0 +1,22 @@
+@import "../../../../data/assets/style/style_import.scss";
+
+.testimonialCarousel {
+    .description {
+        font-family: $font-family-secondary;
+        font-size: 24px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.46;
+        letter-spacing: 0.2px;
+        text-align: center;
+        color: #7e4f4f;
+    }
+
+    .ant-carousel .slick-dots li button {
+        background: #7e4f4f !important;
+        width: 20px !important;
+        height: 7px;
+        margin-top: 25px;
+    }
+}

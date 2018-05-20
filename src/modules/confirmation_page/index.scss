@@ -1,0 +1,28 @@
+@import "../../data/assets/style/style_import.scss";
+
+.confirmationContainer {
+    height: 100vh;
+
+    .orderSuccess {
+        font-family: $font-family-secondary;
+        font-size: 24px;
+        font-weight: 300;
+        color: #0d1a26;
+    }
+
+    .button {
+        background: #804f50;
+        cursor: pointer;
+        padding: 10px 20px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .orderSuccess {
+            font-size: 16px;
+        }
+
+        .button {
+            font-size: 10px;
+        }
+    }
+}

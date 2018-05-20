@@ -1,0 +1,231 @@
+@import "../../data/assets/style/style_import.scss";
+
+.homeContainer {
+    .carouselSliderContainer {
+        height: 100vh !important;
+
+        .mainCarousalContainer {
+            height: 100vh !important;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            .textContainer {
+                text-align: left;
+        
+                .heading {
+                    font-family: $font-family-primary;
+                }
+
+                .description {
+                    font-size: 24px;
+                    font-family: $font-family-secondary;
+                }
+
+                .bottomBorder {
+                    border-bottom: 1px solid white;
+                    width: 80px;
+                    margin-top: 20px;
+                }
+
+                .button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid $white;
+                    font-family: $font-family-secondary;
+                    margin-top: 20px;
+                    padding: 10px;
+                    cursor: pointer;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
+    .companyBannerContainer {
+        background: $primary;
+
+        .companyBannerImages {
+            max-width: 100%;
+            max-height: 350px;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    .placesContainer {
+        // background: #8c1727;
+        background: #bad531;
+        // background: $primary;
+
+        .iconImageContainer {
+            img {
+                max-height: 200px;
+                // border: 1px solid  #8c1727;
+                border-radius: 10px; 
+            }
+        }
+
+        .ant-carousel .slick-dots {
+            margin-bottom: 15px !important;
+
+            li {
+                button {
+                    background: white;
+                    width: 20px;
+                    height: 7px;
+                }
+            }
+        }
+    }
+
+    .productContainer {
+        background: linear-gradient(299deg, #e84551, #cb202d);
+
+        .currentProductContainer {
+            .productImage {
+                max-width: 100%;
+                max-height: 400px;
+                height: auto;
+                width: auto;
+            }
+
+            .knowMoreButton {
+                width: auto;
+                border: 1px solid #fff;
+                font-size: 14px;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #e84551 !important;
+                }
+            }
+
+            .hashtag {
+                opacity: 0.5;
+            }
+
+            .brand {
+                font-size: 30px;
+            }
+
+            .aboutProduct {
+                font-family: $font-family-secondary;
+            }
+
+            .border {
+                border-top: 1px solid $white;
+            }
+        }
+
+        .productsListContainer {
+            .subProductContainer {
+                border: 1px solid transparent;
+                border-radius: 5px;
+
+                .subProduct {
+                    max-width: 180px;
+                }
+
+                &.active {
+                    border-color: #fff;
+                }
+
+                &:hover {
+                    .subProduct {
+                        transform: scale(1.1) !important;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .whereToBuyContainer {
+        img {
+            min-height: 200px;
+        }
+
+        .buyButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $white;
+            font-family: $font-family-secondary;
+            margin-top: 20px;
+            padding: 10px;
+            position: absolute !important;
+            bottom: 30px;
+            font-size: 20px;
+            font-weight: 900;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+                opacity: 0.9;
+                background: transparent;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .mainCarousalContainer {
+            height: 250px !important;
+            
+            .textContainer {
+                .heading {
+                    font-size: 20px;
+                }
+
+                .description {
+                    font-size: 15px;
+                }
+
+                .bottomBorder {
+                    margin-top: 10px;
+                }
+
+                .button {
+                    font-size: 10px;
+                    margin-top: 0px;
+                    padding: 5px;
+                }
+            }
+        }
+
+       .whereToBuyContainer {
+           .buyButton {
+                height: auto;
+                bottom: 20px;
+                font-size: 8px;
+                padding: 5px;
+            }
+        }
+
+        .ant-carousel .slick-dots {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 996px) {
+        .mainCarousalContainer {
+            height: 400px !important;
+            
+            .textContainer {
+                .heading {
+                    font-size: 30px;
+                }
+
+                .description {
+                    font-size: 20px;
+                }
+
+                .bottomBorder {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

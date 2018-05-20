@@ -1,0 +1,32 @@
+@import "../../../data/assets/style/style_import.scss";
+
+.tabContainer {
+    font-family: $font-family-secondary;
+    .description {
+        font-size: 20px;
+    }
+
+    .title {
+        font-weight: 700;
+        margin: 20px 0;
+    }
+
+    .ant-tabs-nav-wrap {
+        font-size: 13px !important;
+        font-family: $font-family-secondary !important;
+        color: rgba(68, 68, 68, 0.5);
+    }
+
+    .ant-tabs-tab-active {
+        border: solid 1px #444444 !important;
+        color: #444444 !important;
+    }
+
+    .ant-tabs-nav .ant-tabs-tab:hover {
+        color: #444444 !important;
+    }
+
+    .ant-tabs-tab {
+        padding: 5px 20px 4px !important;
+    }
+}

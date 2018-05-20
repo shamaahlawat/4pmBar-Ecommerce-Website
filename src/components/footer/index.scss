@@ -1,0 +1,175 @@
+@import "../../data/assets/style/style_import.scss";
+
+.appFooterContainer {
+    background-color: $primary;
+    font-family: $font-family-secondary;
+    word-wrap: break-word;
+
+    .footerBodyContainer {
+        background-color: $primary;
+
+        .footerElements {
+            font-family: $font-family-primary !important;
+
+            .link {
+                color: #e1d9eb;
+
+                &:hover {
+                    color: #fff;
+                    text-shadow: 1px 1px 1px #000;
+                }
+            }
+        }
+
+        .socialLinks {
+            a {
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .enterEmail {
+            height: 40px;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.24);
+    
+            .form-control {
+                background: none !important;
+                border: none !important;
+                color: white !important;
+                box-shadow: none !important;
+                height: auto !important;
+
+                &:focus, &:active {
+                    box-shadow: none !important;
+                }
+                
+                &::placeholder {
+                    color: rgba(white, 0.5) !important;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .borderTop {
+        border-top: 1px solid #BCABCF;
+    }
+
+    .rights {
+        opacity: 0.5;
+    }
+
+
+    .subscriptionPopupContainer {
+        z-index: 5;
+        z-index: 9999999999; //fb messenger icon zindex override
+        font-family: $font-family-secondary;
+        max-width: 400px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+
+        .subscriptionPopup {
+            box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.4);
+
+            .closeBtn {
+                top: -10px;
+                right: -10px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                color: rgba(black, 0.4);
+                box-shadow: 2px -3px 2px 0 rgba(0, 0, 0, 0.1);
+
+                &:hover {
+                    color: black;
+                    box-shadow: 2px -3px 10px 0 rgba(0, 0, 0, 0.4);
+                }
+            }
+            
+            .headerContainer {
+                border-radius: 5px 5px 0 0;
+                background-color: tint(#e8a319, 5);
+
+                .iconContainer {
+                    img {
+                        max-width: 100px;
+                    }
+                }
+            }
+
+            .emailInputContainer {
+                border-radius: 0 0 5px 5px;
+                background-color: shade(#e8a319, 10);
+
+                input {
+                    background-color: shade(#e8a319, 20);
+                    border: none;
+                    padding: 5px 10px;
+                    border-radius: 3px;
+
+                    &:focus {
+                        outline: shade(#e8a319, 30) 1px solid;
+                    }
+
+                    &::placeholder {
+                        color: rgba(white, 0.5);
+                    }
+
+                    &.error {
+                        outline: shade(red, 10) 1px solid;
+                    }
+                }
+
+                .joinBtnContainer {
+                    .joinBtn {
+                        border-radius: 5px;
+                        color: #e8a319;
+                        border: none;
+
+                        &[disabled],
+                        &:disabled {
+                            cursor: not-allowed;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .appFooterContainer{
+        .footerBodyContainer {
+            flex-direction: column;
+            align-items: center;
+
+            input {
+                margin-left: 0px;
+            }
+
+            .form-control {
+                margin: 0px !important;
+                padding: 0px !important;
+            }
+        }
+
+        .footerElements {
+            text-align: center;
+        }
+
+        .subscriptionPopupContainer {
+            max-width: calc(100vw - 30px);
+            right: 15px;
+            bottom: 15px;
+
+            .joinBtnContainer {
+                .joinBtn {
+                    padding: 5px 10px !important;
+                }
+            }
+        }
+    }
+}
